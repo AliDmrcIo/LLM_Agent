@@ -280,7 +280,7 @@
 
             try {
                 // 4. Fetch from API
-                const res = await fetch("/chat", {
+                const res = await fetch("http://127.0.0.1:8053/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ message: msg })
